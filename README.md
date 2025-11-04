@@ -1,7 +1,7 @@
 # ⭐🎬Celebrity Finder⭐🎬
 
 Ce programme permet d'identifier les célébrités lors d'un événement.
-Une célébrité est définie comme une personne connue de tout le monde, mais qui **ne connaît aucune autre célébrité**.
+Une célébrité est définie comme une personne connue de tout le monde, mais qui **connait uniquement d'autres célébrités**.
 
 ---
 
