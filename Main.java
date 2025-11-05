@@ -32,13 +32,14 @@ public class Main {
         }
 	}
 
+	
+	/**
+	 * Function to create desired people, this function will create and insert the invited people into the list
+	 * @param number the number associated the the invited
+	 * @param name his name
+	 * @param int[]... the people's index that he knows
+	 */
 	public static void createInvitedPerson(int number, String name, int... knownPeople) {
-		/**
-		 * Function to create desired people, this function will create and insert the invited people into the list
-		 * @param number the number associated the the invited
-		 * @param name his name
-		 * @param int[]... the people's index that he knows
-		 */
 		//create a entry
 		Map.Entry<String, int[]> person = new AbstractMap.SimpleEntry<>(name,knownPeople);
 		//insert into list
@@ -46,12 +47,12 @@ public class Main {
 	}
 	
 	
+	/**
+	 * Fonction to apply the filters and add celebrities
+	 * @param invitedPeopleList the list of invited people
+	 * @return list of celebrities
+	 */
 	public static Map<Integer, Map.Entry<String, int[]>> findCelebrities(Map<Integer, Map.Entry<String, int[]>> invitedPeopleList) {
-		/**
-		 * Fonction to apply the filters and add celebrities
-		 * @param invitedPeopleList the list of invited people
-		 * @return list of celebrities
-		 */
 		//celebrity list
 		Map<Integer, Map.Entry<String, int[]>> celebrityList = new HashMap<>();
 		
@@ -98,12 +99,13 @@ public class Main {
 		return celebrityList;
 	}
 	
+	
+	/**
+	 * Function to convert a primitive int list ( int[] ) into oop list List<Integer
+	 * @param the primitive list
+	 * @return the oop list
+	 */
 	public static List<Integer> convertPrimitiveListToOOP(int[] primitiveList){
-		/**
-		 * Function to convert a primitive int list ( int[] ) into oop list List<Integer
-		 * @param the primitive list
-		 * @return the oop list
-		 */
 		//create the oop
 		List<Integer> localList = new ArrayList<>();
 		//for each element in the primitive list
